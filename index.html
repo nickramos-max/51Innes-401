@@ -41,7 +41,7 @@ body{font-family:var(--font-body);color:var(--coal);background:#fff;}
 .nav-hamburger{display:none;background:none;border:none;color:#fff;font-size:1.5rem;cursor:pointer;}#top-nav.scrolled .nav-hamburger{color:var(--coal);}.nav-logo-strip{display:flex;justify-content:center;align-items:center;}.nav-logo-strip img{height:48px;width:auto;opacity:0;transition:opacity 0.35s ease;}#top-nav.scrolled .nav-logo-strip img{opacity:1;}
 
 /* HERO */
-#hero{position:relative;min-height:100vh;background:url('images/placeholder.svg') center/cover no-repeat;display:flex;align-items:center;overflow:hidden;}
+#hero{position:relative;min-height:100vh;background:url('images/photo-01.jpg') center/cover no-repeat;display:flex;align-items:center;overflow:hidden;}
 #hero::before{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(26,36,38,0.93) 0%,rgba(26,36,38,0.5) 45%,rgba(26,36,38,0.22) 100%);z-index:1;}
 #hero::after{content:'';position:absolute;inset:0;background:linear-gradient(105deg,rgba(26,36,38,0.55) 0%,transparent 60%);z-index:1;}
 .hero-content{position:relative;z-index:10;width:100%;max-width:800px;margin:0 auto;padding:0 2.5rem;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0;text-align:center;}
@@ -176,12 +176,6 @@ section{scroll-margin-top:var(--nav-h);}
 #neighborhood{background:var(--cream);}
 .neighborhood-layout{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start;}
 .neighborhood-copy p{font-size:0.95rem;line-height:1.9;color:var(--text-mid);font-weight:300;margin-bottom:1.2rem;}
-.walk-scores{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;margin-bottom:2.5rem;}
-.walk-score-item{text-align:center;background:#fff;padding:1.5rem 1rem;border:1px solid rgba(0,0,0,0.06);}
-.ws-number{font-family:var(--font-display);font-size:2.5rem;font-weight:400;color:var(--coal);display:block;line-height:1;margin-bottom:0.25rem;}
-.ws-label{font-size:0.6rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--text-light);font-weight:500;}
-.ws-bar{width:100%;height:3px;background:rgba(0,0,0,0.07);margin:0.7rem 0 0.3rem;border-radius:2px;overflow:hidden;}
-.ws-fill{height:100%;background:linear-gradient(90deg,var(--gold),var(--gold-light));border-radius:2px;width:0%;transition:width 1.2s cubic-bezier(0.4,0,0.2,1);}
 .neighborhood-highlights{display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;}
 .nh-item{background:#fff;border-left:2px solid var(--gold);padding:1rem 1.1rem;transition:transform 0.25s;}
 .nh-item:hover{transform:translateX(3px);}
@@ -313,7 +307,6 @@ footer{background:var(--coal);border-top:1px solid rgba(255,255,255,0.04);}
   .features-grid{grid-template-columns:1fr;}
   .amenities-grid{grid-template-columns:1fr;}
   .neighborhood-highlights{grid-template-columns:1fr;}
-  .walk-scores{grid-template-columns:1fr 1fr;}
   .carousel-wrap{padding:0;}
   .gallery-header{padding:0 1.2rem 1.2rem;}
   .gallery-note{padding:0 1.2rem;}
@@ -440,26 +433,52 @@ footer{background:var(--coal);border-top:1px solid rgba(255,255,255,0.04);}
       <div style="font-size:0.6rem;letter-spacing:0.28em;text-transform:uppercase;color:var(--gold);margin-bottom:0.6rem;font-weight:500;">Photo Gallery</div>
       <div class="gallery-title">Property Photos</div>
     </div>
-    <div class="gallery-subtitle">1 Image &middot; Click to Expand</div>
+    <div class="gallery-subtitle">10 Images &middot; Click to Expand</div>
   </div>
   <div class="carousel-wrap">
     <div class="carousel-viewport" id="carouselViewport">
       <div class="carousel-track" id="carouselTrack">
-        <div class="carousel-slide" onclick="openLightbox(0)"><img src="images/placeholder.svg" alt="Photo placeholder — add real photos"></div>
+        <div class="carousel-slide" onclick="openLightbox(0)"><img src="images/photo-01.jpg" alt="51 Innes Court #401 photo 1"></div>
+        <div class="carousel-slide" onclick="openLightbox(1)"><img src="images/photo-02.jpg" alt="51 Innes Court #401 photo 2"></div>
+        <div class="carousel-slide" onclick="openLightbox(2)"><img src="images/photo-03.jpg" alt="51 Innes Court #401 photo 3"></div>
+        <div class="carousel-slide" onclick="openLightbox(3)"><img src="images/photo-04.jpg" alt="51 Innes Court #401 photo 4"></div>
+        <div class="carousel-slide" onclick="openLightbox(4)"><img src="images/photo-05.jpg" alt="51 Innes Court #401 photo 5"></div>
+        <div class="carousel-slide" onclick="openLightbox(5)"><img src="images/photo-06.jpg" alt="51 Innes Court #401 photo 6"></div>
+        <div class="carousel-slide" onclick="openLightbox(6)"><img src="images/photo-07.jpg" alt="51 Innes Court #401 photo 7"></div>
+        <div class="carousel-slide" onclick="openLightbox(7)"><img src="images/photo-08.jpg" alt="51 Innes Court #401 photo 8"></div>
+        <div class="carousel-slide" onclick="openLightbox(8)"><img src="images/photo-09.jpg" alt="51 Innes Court #401 photo 9"></div>
+        <div class="carousel-slide" onclick="openLightbox(9)"><img src="images/photo-10.jpg" alt="51 Innes Court #401 photo 10"></div>
       </div>
       <button class="carousel-btn carousel-prev" onclick="carouselMove(-1)" aria-label="Previous">&#8249;</button>
       <button class="carousel-btn carousel-next" onclick="carouselMove(1)" aria-label="Next">&#8250;</button>
-      <div class="carousel-counter"><span id="carouselCurrent">1</span> / <span id="carouselTotal">1</span></div>
+      <div class="carousel-counter"><span id="carouselCurrent">1</span> / <span id="carouselTotal">10</span></div>
       <button class="expand-btn" onclick="openLightbox(carouselIdx)" title="View fullscreen">&#8599;</button>
     </div>
     <div class="carousel-thumbs" id="carouselThumbs">
-      <div class="carousel-thumb active" onclick="carouselGo(0)"><img src="images/placeholder.svg" alt="Photo placeholder — add real photos"></div>
+      <div class="carousel-thumb active" onclick="carouselGo(0)"><img src="images/photo-01.jpg" alt="51 Innes Court #401 photo 1"></div>
+      <div class="carousel-thumb" onclick="carouselGo(1)"><img src="images/photo-02.jpg" alt="51 Innes Court #401 photo 2"></div>
+      <div class="carousel-thumb" onclick="carouselGo(2)"><img src="images/photo-03.jpg" alt="51 Innes Court #401 photo 3"></div>
+      <div class="carousel-thumb" onclick="carouselGo(3)"><img src="images/photo-04.jpg" alt="51 Innes Court #401 photo 4"></div>
+      <div class="carousel-thumb" onclick="carouselGo(4)"><img src="images/photo-05.jpg" alt="51 Innes Court #401 photo 5"></div>
+      <div class="carousel-thumb" onclick="carouselGo(5)"><img src="images/photo-06.jpg" alt="51 Innes Court #401 photo 6"></div>
+      <div class="carousel-thumb" onclick="carouselGo(6)"><img src="images/photo-07.jpg" alt="51 Innes Court #401 photo 7"></div>
+      <div class="carousel-thumb" onclick="carouselGo(7)"><img src="images/photo-08.jpg" alt="51 Innes Court #401 photo 8"></div>
+      <div class="carousel-thumb" onclick="carouselGo(8)"><img src="images/photo-09.jpg" alt="51 Innes Court #401 photo 9"></div>
+      <div class="carousel-thumb" onclick="carouselGo(9)"><img src="images/photo-10.jpg" alt="51 Innes Court #401 photo 10"></div>
     </div>
     <div class="carousel-dots" id="carouselDots">
       <button class="carousel-dot active" onclick="carouselGo(0)"></button>
+      <button class="carousel-dot" onclick="carouselGo(1)"></button>
+      <button class="carousel-dot" onclick="carouselGo(2)"></button>
+      <button class="carousel-dot" onclick="carouselGo(3)"></button>
+      <button class="carousel-dot" onclick="carouselGo(4)"></button>
+      <button class="carousel-dot" onclick="carouselGo(5)"></button>
+      <button class="carousel-dot" onclick="carouselGo(6)"></button>
+      <button class="carousel-dot" onclick="carouselGo(7)"></button>
+      <button class="carousel-dot" onclick="carouselGo(8)"></button>
+      <button class="carousel-dot" onclick="carouselGo(9)"></button>
     </div>
   </div>
-  <div class="gallery-note reveal">TODO: replace images/placeholder.svg with real listing photos, then add matching carousel-slide / carousel-thumb / carousel-dot entries and update the lbSlides array in the script below.</div>
 </section>
 
 <section id="amenities">
@@ -488,11 +507,6 @@ footer{background:var(--coal);border-top:1px solid rgba(255,255,255,0.04);}
     <h2 class="section-title reveal rd1">The Neighborhood</h2>
     <div class="neighborhood-layout">
       <div>
-        <div class="walk-scores reveal rd2">
-          <div class="walk-score-item"><span class="ws-number" data-score="0">0</span><div class="ws-bar"><div class="ws-fill" data-width="0"></div></div><div class="ws-label">Walk Score</div></div>
-          <div class="walk-score-item"><span class="ws-number" data-score="0">0</span><div class="ws-bar"><div class="ws-fill" data-width="0"></div></div><div class="ws-label">Transit Score</div></div>
-          <div class="walk-score-item"><span class="ws-number" data-score="0">0</span><div class="ws-bar"><div class="ws-fill" data-width="0"></div></div><div class="ws-label">Bike Score</div></div>
-        </div>
         <div class="neighborhood-copy reveal rd3">
           <p>51 Innes Court sits within The Shipyard, a waterfront community in Hunters Point, conveniently located near Dogpatch, Potrero Hill, and Mission Bay &mdash; with easy access to highways, UCSF Medical Center, and San Francisco&rsquo;s sports stadiums.</p>
           <p>The home is served by the San Francisco Unified School District, with Malcolm X Elementary School (0.87 mi) and Willie L. Brown Jr. Middle School (1.83 mi) both nearby.</p>
@@ -612,7 +626,7 @@ footer{background:var(--coal);border-top:1px solid rgba(255,255,255,0.04);}
       <button class="footer-print" onclick="window.print()">&#128424; Print Listing</button>
     </div>
   </div>
-  <div class="footer-disc">Information deemed reliable but not guaranteed. All square footage is approximate. Buyers are responsible for verifying all information they deem important. Equal Housing Opportunity. Walk scores are approximate based on publicly available data.</div>
+  <div class="footer-disc">Information deemed reliable but not guaranteed. All square footage is approximate. Buyers are responsible for verifying all information they deem important. Equal Housing Opportunity.</div>
 </footer>
 
 <script>
@@ -629,12 +643,6 @@ const io = new IntersectionObserver((entries) => {
     entry.target.classList.add('visible');
     entry.target.querySelectorAll('[data-target]').forEach(el => {
       if (!el.dataset.counted) animateCounter(el);
-    });
-    entry.target.querySelectorAll('.ws-fill[data-width]').forEach(bar => {
-      setTimeout(() => { bar.style.width = bar.dataset.width + '%'; }, 300);
-    });
-    entry.target.querySelectorAll('.ws-number[data-score]').forEach(el => {
-      if (!el.dataset.counted) animateScore(el);
     });
     io.unobserve(entry.target);
   });
@@ -656,19 +664,6 @@ function animateCounter(el) {
     if (format === 'price') el.textContent = '$' + val.toLocaleString();
     else if (format === 'year') el.textContent = val >= 2000 ? val : '';
     else el.textContent = prefix + val.toLocaleString() + suffix;
-    if (p < 1) requestAnimationFrame(update);
-  };
-  requestAnimationFrame(update);
-}
-
-function animateScore(el) {
-  el.dataset.counted = '1';
-  const target = parseInt(el.dataset.score);
-  const start = performance.now();
-  const dur = 1200;
-  const update = (now) => {
-    const p = Math.min((now - start) / dur, 1);
-    el.textContent = Math.round((1 - Math.pow(1-p,3)) * target);
     if (p < 1) requestAnimationFrame(update);
   };
   requestAnimationFrame(update);
@@ -700,7 +695,16 @@ vp.addEventListener('touchend', e => {
 });
 
 const lbSlides = [
-  {src:'images/placeholder.svg',label:'Photo placeholder — add real photos'},
+  {src:'images/photo-01.jpg',label:'Photo 1'},
+  {src:'images/photo-02.jpg',label:'Photo 2'},
+  {src:'images/photo-03.jpg',label:'Photo 3'},
+  {src:'images/photo-04.jpg',label:'Photo 4'},
+  {src:'images/photo-05.jpg',label:'Photo 5'},
+  {src:'images/photo-06.jpg',label:'Photo 6'},
+  {src:'images/photo-07.jpg',label:'Photo 7'},
+  {src:'images/photo-08.jpg',label:'Photo 8'},
+  {src:'images/photo-09.jpg',label:'Photo 9'},
+  {src:'images/photo-10.jpg',label:'Photo 10'},
 ];
 let lbIdx = 0;
 function openLightbox(idx) {
