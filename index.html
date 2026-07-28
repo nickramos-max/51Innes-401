@@ -202,7 +202,8 @@ section{scroll-margin-top:var(--nav-h);}
 .private-showing{background:var(--cream);padding:2.75rem;}
 .ps-title{font-family:var(--font-display);font-size:1.5rem;font-weight:400;color:var(--coal);margin-bottom:0.6rem;letter-spacing:-0.01em;}
 .ps-sub{font-size:0.85rem;color:rgba(26,36,38,0.6);font-weight:300;line-height:1.7;margin-bottom:2rem;}
-.ps-contact{display:flex;flex-direction:column;gap:0.65rem;margin-bottom:2rem;}
+.ps-contact{display:flex;flex-direction:column;gap:0.65rem;margin-bottom:1.5rem;}
+.ps-agent-name{font-size:0.6rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:0.2rem;}
 .ps-contact-item{display:flex;align-items:center;gap:0.75rem;}
 .ps-icon{font-size:0.9rem;opacity:0.6;width:20px;text-align:center;}
 .ps-val{font-size:0.88rem;color:#1A2426;text-decoration:none;font-weight:400;transition:color 0.25s;}
@@ -564,8 +565,12 @@ footer{background:var(--coal);border-top:1px solid rgba(255,255,255,0.04);}
     <div class="schedule-layout">
       <div>
         <div class="open-house-card reveal rd2">
-          <div class="oh-date-box"><span class="oh-month">[Mon]</span><span class="oh-day">[DD]</span><span class="oh-weekday">[Day]</span></div>
-          <div><div class="oh-type">Open House</div><div class="oh-time">[Time Range]</div><div class="oh-note">Come discover the view in person. No appointment necessary &mdash; all are welcome.</div></div>
+          <div class="oh-date-box"><span class="oh-month">Aug</span><span class="oh-day">8</span><span class="oh-weekday">Sat</span></div>
+          <div><div class="oh-type">Open House</div><div class="oh-time">11:00 AM &ndash; 1:00 PM</div><div class="oh-note">Come discover the view in person. No appointment necessary &mdash; all are welcome.</div></div>
+        </div>
+        <div class="open-house-card reveal rd3">
+          <div class="oh-date-box"><span class="oh-month">Aug</span><span class="oh-day">9</span><span class="oh-weekday">Sun</span></div>
+          <div><div class="oh-type">Open House</div><div class="oh-time">11:00 AM &ndash; 1:00 PM</div><div class="oh-note">Come discover the view in person. No appointment necessary &mdash; all are welcome.</div></div>
         </div>
         <div class="schedule-actions reveal rd5">
           <a href="#contact" class="btn-outline">Request Showing</a>
@@ -575,8 +580,14 @@ footer{background:var(--coal);border-top:1px solid rgba(255,255,255,0.04);}
         <div class="ps-title">Prefer a Private Tour?</div>
         <p class="ps-sub">We&rsquo;re happy to arrange a private showing at your convenience. Reach out any time &mdash; Nicholas and Lynn are here to help.</p>
         <div class="ps-contact">
+          <div class="ps-agent-name">Nicholas Ramos</div>
           <div class="ps-contact-item"><span class="ps-icon">&#128222;</span><a href="tel:+14159939113" class="ps-val">(415) 993-9113</a></div>
           <div class="ps-contact-item"><span class="ps-icon">&#9993;</span><a href="mailto:nickramos@christiesrealestatenorcal.com" class="ps-val">nickramos@christiesrealestatenorcal.com</a></div>
+        </div>
+        <div class="ps-contact">
+          <div class="ps-agent-name">Lynn Bell</div>
+          <div class="ps-contact-item"><span class="ps-icon">&#128222;</span><a href="tel:+19252603882" class="ps-val">(925) 260-3882</a></div>
+          <div class="ps-contact-item"><span class="ps-icon">&#9993;</span><a href="mailto:lynn@christiesrealestatenorcal.com" class="ps-val">lynn@christiesrealestatenorcal.com</a></div>
         </div>
         <a href="#contact" class="btn-gold">Schedule Now &rarr;</a>
       </div>
